@@ -31,6 +31,10 @@ plugins:
   - jekyll-feed
   - jekyll-admin
 
+jekyll_admin:
+  hidden_links:
+    - posts
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
