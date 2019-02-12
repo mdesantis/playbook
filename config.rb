@@ -14,9 +14,9 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 # With alternative layout
+# page '/path/to/file.html', layout: 'other_layout'
 page '/*', layout: 'playbook'
 page '/admin/*', layout: false
-# page '/path/to/file.html', layout: 'other_layout'
 
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
@@ -39,10 +39,13 @@ page '/admin/*', layout: false
 #   end
 # end
 
+# Pretty urls
+activate :directory_indexes
+
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+end
