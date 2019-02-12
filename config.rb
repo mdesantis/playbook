@@ -5,6 +5,14 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+# Settings
+set :css_dir, 'assets/stylesheets'
+set :images_dir, 'assets/images'
+set :js_dir, 'assets/javascripts'
+
+# Ignored paths
+ignore '**/.keep'
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -15,7 +23,7 @@ page '/*.txt', layout: false
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
-page '/*', layout: 'playbook'
+page '/playbook/*', layout: 'playbook'
 page '/admin/*', layout: false
 
 # Proxy pages
