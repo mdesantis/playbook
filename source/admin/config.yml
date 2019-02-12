@@ -1,0 +1,18 @@
+backend:
+  name: test-repo
+
+collections:
+  - label: "Playbook page"
+    name: "playbook"
+    folder: source/playbook/
+    extension: .html.md
+    format: frontmatter
+    create: true
+    slug: '{{title}}'
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "playbook"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+media_folder: source/images/uploads
+public_folder: /images/uploads
