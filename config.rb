@@ -14,6 +14,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 # With alternative layout
+page '/*', layout: 'playbook'
 page '/admin/*', layout: false
 # page '/path/to/file.html', layout: 'other_layout'
 
