@@ -11,7 +11,7 @@
   </head>
   <body>
     <%= yield %>
-    <% data.home_navigation.navigation_items.each do |item| %>
+    <% data.home.navigation.navigation_items.each do |item| %>
       <%= partial 'layouts/home/navigation_item', locals: { item: item } %>
     <% end %>
   </body>
