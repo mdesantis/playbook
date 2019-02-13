@@ -10,27 +10,27 @@ media_folder: source/images/uploads
 public_folder: /images/uploads
 
 collections:
-  - label: Playbook pages
-    name: playbook-pages
-    folder: source/playbook/
-    extension: .html.md
-    format: frontmatter
-    create: true
-    slug: '{{title}}'
-    fields:
-      - label: Title
-        name: title
-        widget: string
-        required: true
-      - label: Body
-        name: body
-        widget: markdown
-  - label: Settings
-    name: settings
+  - label: Home
+    name: home
     files:
-      - file: data/home_navigation.yml
-        label: Home navigation
-        name: home-navigation
+      - file: source/index.html.md
+        label: Homepage
+        name: homepage
+        format: frontmatter
+        create: false
+        delete: false
+        slug: '{{title}}'
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: true
+          - label: Body
+            name: body
+            widget: markdown
+      - file: data/home/navigation.yml
+        label: Navigation
+        name: navigation
         fields:
           - label: Navigation items
             name: navigation_items
@@ -45,3 +45,19 @@ collections:
               - label: Link
                 name: link
                 widget: string
+  - label: Playbook
+    name: playbook
+    label_singular: Playbook page
+    folder: source/playbook/
+    extension: .html.md
+    format: frontmatter
+    create: true
+    slug: '{{title}}'
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: Body
+        name: body
+        widget: markdown
