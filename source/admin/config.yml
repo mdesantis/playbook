@@ -33,7 +33,7 @@ collections:
         name: home-navigation
         fields:
           - label: Navigation items
-            name: navigation-items
+            name: navigation_items
             widget: list
             fields:
               - label: Image path
