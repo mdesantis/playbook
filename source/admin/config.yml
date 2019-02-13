@@ -1,5 +1,8 @@
 backend:
-  name: test-repo
+  name: github
+  repo: mdesantis/playbook # Path to your GitHub
+  branch: middleman # Branch to update (optional; defaults to master) repository
+  # name: test-repo
 
 media_folder: source/images/uploads
 public_folder: /images/uploads
