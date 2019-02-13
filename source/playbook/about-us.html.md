@@ -1,6 +1,6 @@
 ---
 title: About us
-topics:
+playbook-section-topics:
   - Our values
   - What we do
 ---
