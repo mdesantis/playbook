@@ -4,6 +4,8 @@ backend:
   branch: middleman # Branch to update (optional; defaults to master) repository
   # name: test-repo
 
+publish_mode: editorial_workflow
+
 media_folder: source/images/uploads
 public_folder: /images/uploads
 
