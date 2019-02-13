@@ -25,3 +25,19 @@ collections:
       - label: Body
         name: body
         widget: markdown
+  - name: Home navigation
+    label: Home navigation
+    files:
+      - file: data/home_navigation.yml
+        label: Homepage
+        name: home
+        fields:
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Image, name: image, widget: image}
+          - label: Story
+            name: story
+            widget: markdown
