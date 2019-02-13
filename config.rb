@@ -26,6 +26,10 @@ page '/*.txt', layout: false
 page '/playbook/*', layout: 'playbook'
 page '/admin/*', layout: false
 
+# Redirects
+# https://middlemanapp.com/basics/redirects/
+# redirect "/my/old/path.html", to: "/my/new/path.html"
+
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
 
