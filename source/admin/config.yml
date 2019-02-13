@@ -47,9 +47,9 @@ collections:
               - label: Link
                 name: link
                 widget: string
-  - label: Playbook
-    name: playbook
-    label_singular: Playbook page
+  - label: Playbook sections
+    name: playbook-sections
+    label_singular: Playbook section
     folder: source/playbook/
     extension: .html.md
     format: frontmatter
@@ -61,22 +61,22 @@ collections:
         widget: string
         required: true
       - label: Topics
-        name: section-topics
+        name: playbook-section-topics
         label_singular: topic
         widget: list
         field:
           label: Topic
           name: topic
           widget: relation
-          collection: topics
+          collection: playbook-topics
           searchFields:
             - title
           valueField: title
       - label: Body
         name: body
         widget: markdown
-  - label: Topics
-    name: topics
+  - label: Playbook topics
+    name: playbook-topics
     label_singular: Playbook topic
     folder: source/topics/
     extension: .html.md
