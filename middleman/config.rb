@@ -6,7 +6,7 @@ set :images_dir, 'middleman/assets'
 set :fonts_dir, 'middleman/assets/fonts'
 set :layouts_dir, 'middleman/layouts'
 set :data_dir, 'data'
-set :helpers_dir, 'middleman/helpers'
+set :helpers_dir, 'helpers'
 
 ## Playbook settings
 set :playbook_section_topics_dir, 'topics'
