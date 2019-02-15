@@ -10,6 +10,7 @@ set :helpers_dir, 'middleman/helpers'
 
 # Ignored paths
 ignore /^middleman(?!\/assets).*/
+ignore '**/.keep'
 
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
