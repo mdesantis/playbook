@@ -1,7 +1,5 @@
 ---
 title: How we work
-playbook-section-topics:
-  - Tools
-  - Client guide
+playbook-section-topics: []
 ---
 How we work body
