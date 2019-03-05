@@ -1,5 +1,6 @@
-# Tracking time
-
+---
+title: Tracking time
+---
 A central matter for our everyday work is the ability to make good use of the
 time we spend at the office. To spend time efficiently, measuring time is
 essential.
